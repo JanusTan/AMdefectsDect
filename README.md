@@ -1,2 +1,2 @@
-# AMdefectsDect
+# AMdefectsDection
 ## Details in PDF file
