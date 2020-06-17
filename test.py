@@ -37,7 +37,7 @@ IMG_SIZE = 160  # All images will be resized to 160x160
 
 
 def format_example(path, label):
-    image = tf.io.read_file(path)  # 读取图片
+    image = tf.io.read_file(path)  
     image = tf.image.decode_png(image, channels=3)
     image = tf.cast(image, tf.float32)
     image = (image / 255.0)
@@ -46,7 +46,7 @@ def format_example(path, label):
 
 
 def format_example2(path):
-    image = tf.io.read_file(path)  # 读取图片
+    image = tf.io.read_file(path) 
     image = tf.image.decode_png(image, channels=3)
     image = tf.cast(image, tf.float32)
     image = (image / 255.0)
